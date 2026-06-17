@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=380, initial-scale=1.0">
+    <title>Anti Fingerprinting</title>
+    <link rel="stylesheet" href="../themes/anti-fingerprinting.css">
+    <link rel="stylesheet" href="browserAction.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="main-title">SECURITY PROTOCOL</h1>
+        </header>
+
+        <!-- Tasks -->
+        <div class="tasks-container">
+            
+            <!-- Task 1: Anti Fingerprinting -->
+            <div class="task-box">
+                <div class="task-header">
+                    <span class="task-number">STEP 1</span>
+                    <span class="task-desc">Hardware Protection</span>
+                </div>
+                <div class="task-action toggle-action">
+                    <span class="task-title">ANTI FINGERPRINTING</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="master-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Task 2: Clear Cookies -->
+            <div class="task-box">
+                <div class="task-header">
+                    <span class="task-number">STEP 2</span>
+                    <span class="task-desc">State & Data Protection</span>
+                </div>
+                <button class="task-btn action-red" id="clear-data-btn">
+                    CLEAR BROWSER COOKIES
+                </button>
+                <div class="task-feedback" id="clear-feedback" style="display: none;">COOKIES CLEARED!</div>
+            </div>
+
+            <!-- Task 3: Network Protection -->
+            <div class="task-box">
+                <div class="task-header">
+                    <span class="task-number">STEP 3</span>
+                    <span class="task-desc">Network Anonymity (VPN)</span>
+                </div>
+                <button class="task-btn action-blue" id="warp-btn">
+                    DOWNLOAD WARP 1.1.1.1
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="../lib/require.js"></script>
+    <script src="browserAction.js"></script>
+</body>
+</html>

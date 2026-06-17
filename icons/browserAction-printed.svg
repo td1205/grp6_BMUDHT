@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Soft background glow for the icon -->
+  <circle cx="64" cy="64" r="60" fill="url(#glowGradient)" />
+  
+  <!-- Sleek fingerprint paths -->
+  <g stroke="#3B82F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 24 c-22.1 0 -40 17.9 -40 40 v8" />
+    <path d="M80 34 c-4.6 -2.3 -9.8 -3.6 -15.3 -3.6 c-20.4 0 -37 16.6 -37 37 v12" />
+    <path d="M96 46 c-7 -6.5 -16.5 -10.5 -26.8 -10.5 c-21.5 0 -39 17.5 -39 39 v6" />
+    <path d="M102 60 c-8.5 -8.5 -20 -13.5 -32.8 -13.5 c-22 0 -40 18 -40 40" />
+    <path d="M106 76 c-9.5 -8 -22.5 -12.5 -36.5 -12.5 c-20 0 -36.5 16 -36.5 35" />
+    <path d="M100 96 c-7.5 -6.5 -18 -10.5 -29 -10.5" />
+  </g>
+
+  <!-- Accent dot representing a 'node' or 'mask' in the crowd -->
+  <circle cx="64" cy="64" r="8" fill="#EF4444" />
+  <circle cx="64" cy="64" r="14" stroke="#EF4444" stroke-width="2" stroke-dasharray="4 4">
+    <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="10s" repeatCount="indefinite" />
+  </circle>
+
+  <defs>
+    <radialGradient id="glowGradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+      <stop offset="0%" stop-color="#13151A" stop-opacity="1" />
+      <stop offset="100%" stop-color="#1B1F27" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+</svg>

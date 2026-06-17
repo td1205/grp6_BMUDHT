@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+:root {
+  /* Brutalism Theme - Dark Mode */
+  --bg-primary: #000000;
+  --bg-secondary: #000000;
+  --bg-tertiary: #000000;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #FFFFFF;
+  --text-accent: #3B82F6;
+  
+  --accent-blue: #3B82F6;
+  --accent-red: #3B82F6;
+  --accent-green: #3B82F6;
+
+  --border-light: #FFFFFF;
+  --border-strong: #FFFFFF;
+  
+  --font-family: 'Inter', sans-serif;
+  
+  --border-radius: 0px;
+  
+  /* No Transitions */
+  --transition-fast: none;
+  --transition-normal: none;
+}
+
+body.light-mode {
+  /* Brutalism Theme - Light Mode */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #FFFFFF;
+  
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --text-accent: #3B82F6;
+  
+  --accent-blue: #3B82F6;
+  --accent-red: #3B82F6;
+  --accent-green: #3B82F6;
+  
+  --border-light: #000000;
+  --border-strong: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* Flat panel - Brutalism */
+.glass-panel {
+  background: var(--bg-primary);
+  border: 2px solid var(--border-light);
+  border-radius: var(--border-radius);
+  box-shadow: 4px 4px 0px var(--text-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary); 
+  border-left: 2px solid var(--border-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-primary); 
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue); 
+}
